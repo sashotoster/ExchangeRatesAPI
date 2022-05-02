@@ -103,7 +103,7 @@ class Response
             'timestamp'    => $this->getTimestamp(),
             'date'         => $this->getDate(),
             'baseCurrency' => $this->getBaseCurrency(),
-            'rates'        => $this->getRates()
+            'rates'        => (array)$this->getRates()
         ]);
     }
 }
